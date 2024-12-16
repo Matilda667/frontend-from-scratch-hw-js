@@ -44,4 +44,4 @@ switch (true) {
         grade = 'Неверный балл'; // Если балл меньше 0 или больше 100
 }
 
-// console.log(grade);
+console.log(grade);
