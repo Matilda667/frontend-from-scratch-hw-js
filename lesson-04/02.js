@@ -15,8 +15,11 @@
 Подсказка: можно использовать функцию `includesElement`, которую мы написали ранее. Переписывать её не нужно, она доступна по всему проекту за счёт hoisting.
 */
 
+function includesElement(array, element) {
+    return array.includes(element);
+}
 function findUniqueElements(array) {
-        const uniqueElements = []; // Создаем новый массив для уникальных элементов
+        const uniqueElements = []; 
 
 for (let i = 0; i < array.length; i++) {
     // Проверяем, есть ли элемент уже в массиве уникальных элементов
@@ -27,5 +30,3 @@ for (let i = 0; i < array.length; i++) {
 
 return uniqueElements; // Возвращаем массив с уникальными элементами
 }
-// const arr = [1, 2, 2, 3, 4, 4, 5];
-// console.log(findUniqueElements(arr));
