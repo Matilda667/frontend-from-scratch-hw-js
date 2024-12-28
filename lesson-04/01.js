@@ -22,3 +22,4 @@ function includesElement(array, element) {
     return false; // Элемент не найден
 }
 // console.log(includesElement([1, 2, 3], 6))
+export { includesElement };
