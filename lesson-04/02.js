@@ -23,12 +23,12 @@ function includesElement(array, element) {
 function findUniqueElements(array) {
     const uniqueElements = [];
 
-    for (let i = 0; i < array.length; i++) {
-        // Проверяем, есть ли элемент уже в массиве уникальных элементов
-        if (!includesElement(uniqueElements, array[i])) {
-            uniqueElements.push(array[i]); // Если нет, добавляем его
+    for (let i = 0; i < array.length; i++) {  
+        if (!includesElement(uniqueElements, array[i])) { 
+            uniqueElements.push(array[i]); 
         }
     }
 
-    return uniqueElements; // Возвращаем массив с уникальными элементами
+    return uniqueElements; 
 }
+// console.log (findUniqueElements([1, 2, 3, 2, 1, 4]))
