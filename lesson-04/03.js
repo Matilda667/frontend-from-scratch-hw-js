@@ -30,4 +30,9 @@ function findCommonElements(array1, array2) {
 
     return commonElements;
 }
+const result = findCommonElements(array1, array2);
 console.log(findCommonElements([1, 2, 3], [2, 3, 4])) // [2, 3]
+
+
+
+
