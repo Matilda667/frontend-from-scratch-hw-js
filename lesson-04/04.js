@@ -23,4 +23,4 @@ function doubleEachCharacter(str) {
 }
 
 // Пример использования:
-console.log(doubleEachCharacter('hello')); // Вывод: 'hheelllloo'
+// console.log(doubleEachCharacter('hello')); // Вывод: 'hheelllloo'
