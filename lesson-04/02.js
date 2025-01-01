@@ -27,4 +27,4 @@ function findUniqueElements(array) { // исходный массив
     return uniqueElements; // возвращаем массив уникальных элементов
 }
 
-console.log(findUniqueElements([1, 2, 3, 2, 1, 4])); // Выводит: [1, 2, 3, 4]
+console.log(findUniqueElements([array])); // Выводит: [1, 2, 3, 4]
