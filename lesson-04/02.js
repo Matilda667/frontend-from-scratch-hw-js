@@ -15,18 +15,16 @@
 Подсказка: можно использовать функцию `includesElement`, которую мы написали ранее. Переписывать её не нужно, она доступна по всему проекту за счёт hoisting.
 */
 
+function findUniqueElements() { }
 
-function findUniqueElements(array) {
-    const uniqueElements = [];
-
-    for (let i = 0; i < array.length; i++) {  // Используем let для объявления переменной i
-        if (!uniqueElements.includes(array[i])) {
-            uniqueElements.push(array[i]);
+function findUniqueElements(array) { // исходный массив
+    const uniqueElements = []; // создаем новый массив для уникальных элементов
+    for (let i = 0; i < array.length; i++) { // итерируемся по массиву
+        if (!uniqueElements.includes(array[i])) { // проверяем, содержится ли элемент в массиве уникальных элементов
+            uniqueElements.push(array[i]); // если нет, добавляем его
         }
     }
-
-    return uniqueElements;
+    return uniqueElements; // возвращаем массив уникальных элементов
 }
-const result = findUniqueElements(array);
 
-// console.log(findUniqueElements([1, 2, 3, 2, 1, 4]));
+console.log(findUniqueElements([1, 2, 3, 2, 1, 4])); // Выводит: [1, 2, 3, 4]
