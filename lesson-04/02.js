@@ -16,14 +16,10 @@
 */
 
 
-function includesElement(array, element) {
-    return array.includes(element);
-}
-
 function findUniqueElements(array) {
     const uniqueElements = [];
 
-    for (let i = 0; i < array.length; i++) {  
+    for (i = 0; i < array.length; i++) {  
         if (!uniqueElements.includes(array[i])) { 
             uniqueElements.push(array[i]); 
         }
