@@ -24,11 +24,11 @@ function findUniqueElements(array) {
     const uniqueElements = [];
 
     for (let i = 0; i < array.length; i++) {  
-        if (!includesElement(uniqueElements, array[i])) { 
+        if (!uniqueElements.includes(array[i])) { 
             uniqueElements.push(array[i]); 
         }
     }
 
     return uniqueElements; 
 }
-// console.log (findUniqueElements([1, 2, 3, 2, 1, 4]))
+console.log (findUniqueElements([1, 2, 3, 2, 1, 4]))
