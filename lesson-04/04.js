@@ -19,7 +19,7 @@ function doubleEachCharacter(str) {
         doubledString += str[i] + str[i]; // Удваиваем текущий символ и добавляем к результату
     }
 
-    return doubledString; // Возвращаем итоговую строку
+    return doubledString; 
 }
 
 // Пример использования:
