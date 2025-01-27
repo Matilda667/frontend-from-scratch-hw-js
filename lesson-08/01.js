@@ -69,6 +69,7 @@ clearCartButton.addEventListener('click', function () {
 
 // Твой код:
 // Обработчик события клика по контейнеру питомцев
+
 petShop.addEventListener('click', function (event) {
   if (event.target.classList.contains('pet')) {
     const petId = event.target.id;
