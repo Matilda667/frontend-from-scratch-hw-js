@@ -56,7 +56,7 @@ const view = {
     const list = document.querySelector('.list');
     list.addEventListener('click', function(event) {
       if (event.target.classList.contains('delete-button')) {
-        const movieId = event.target.closest('.movie').id;
+        const movieId = parseFloat(event.target.closest('.movie').id); // Приводим к числу
         controller.deleteMovie(movieId);
       }
     });
